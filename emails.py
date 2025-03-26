@@ -23,7 +23,7 @@ def send_mail(name_one: str, name_two: str, mail: str, percentage: int):
     msg.attach(MIMEText(body, "plain"))
 
     try:
-        with smtplib.SMTP(smtp_server, 578) as server:
+        with smtplib.SMTP(smtp_server, 587) as server:
             server.starttls()  # Verschlüsselung aktivieren
             server.login(sender_email, password)  # Einloggen
             server.sendmail(sender_email, receiver_email, msg.as_string())

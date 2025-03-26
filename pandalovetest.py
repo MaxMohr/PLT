@@ -62,7 +62,7 @@ async def panda_percentage(
 ):
     percentage = random.randint(0, 100)
 
-    #send_mail(name_one, name_two, mail, percentage)
+    send_mail(name_one, name_two, mail, percentage)
     save_test(name_one, name_two, percentage, mail, session)
 
     return str(percentage)
