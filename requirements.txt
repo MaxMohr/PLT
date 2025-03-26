@@ -1,0 +1,6 @@
+fastapi[standard]
+jinja2
+sqlmodel
+uvicorn
+pydantic
+hypercorn
